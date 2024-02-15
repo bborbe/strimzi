@@ -7,13 +7,14 @@ import (
 	json "encoding/json"
 	"fmt"
 
-	v1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
-	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/client/applyconfiguration/kafka.strimzi.io/v1beta2"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	testing "k8s.io/client-go/testing"
+
+	v1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
+	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/client/applyconfiguration/kafka.strimzi.io/v1beta2"
 )
 
 // FakeKafkaTopics implements KafkaTopicInterface

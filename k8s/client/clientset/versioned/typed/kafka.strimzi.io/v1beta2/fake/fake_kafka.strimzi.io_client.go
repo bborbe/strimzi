@@ -3,9 +3,10 @@
 package fake
 
 import (
-	v1beta2 "github.com/bborbe/strimzi/k8s/client/clientset/versioned/typed/kafka.strimzi.io/v1beta2"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
+
+	v1beta2 "github.com/bborbe/strimzi/k8s/client/clientset/versioned/typed/kafka.strimzi.io/v1beta2"
 )
 
 type FakeKafkaV1beta2 struct {

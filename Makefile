@@ -29,7 +29,7 @@ vet:
 	go vet -mod=vendor $(shell go list -mod=vendor ./... | grep -v /vendor/)
 
 errcheck:
-	go run -mod=vendor github.com/kisielk/errcheck -ignore '(Close|Write|Fprint)' $(shell go list -mod=vendor ./... | grep -v /vendor/)
+	go run -mod=vendor github.com/kisielk/errcheck -ignore '(Close|Write|Fprint|SetTransform)' $(shell go list -mod=vendor ./... | grep -v /vendor/)
 
 addlicense:
 	go run -mod=vendor github.com/google/addlicense -c "Benjamin Borbe" -y $$(date +'%Y') -l bsd $$(find . -name "*.go" -not -path './vendor/*')

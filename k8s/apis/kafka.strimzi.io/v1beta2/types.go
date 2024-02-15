@@ -60,13 +60,9 @@ type KafkaTopicList struct {
 
 type KafkaTopicSpecs []KafkaTopicSpec
 
-type Value interface {
-	DeepCopyValue() Value
-}
-
 type KafkaTopicSpec struct {
 	// The topic configuration.
-	Config map[string]Value `json:"config,omitempty"`
+	Config map[string]string `json:"config,omitempty"`
 
 	// The number of partitions the topic should have. This cannot be decreased after
 	// topic creation. It can be increased after topic creation, but it is important

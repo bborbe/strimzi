@@ -5,9 +5,10 @@ package externalversions
 import (
 	"fmt"
 
-	v1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
+
+	v1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
 )
 
 // GenericInformer is type of SharedIndexInformer which will locate and delegate to other

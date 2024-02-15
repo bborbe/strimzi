@@ -8,9 +8,9 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## v1.2.0
+## v1.2.1
 
-- Change Topic config value from string to interface
+- Update to k8s 1.29
 
 ## v1.1.0
 

@@ -36,6 +36,7 @@ type topicDeployer struct {
 func (t *topicDeployer) Deploy(ctx context.Context, topic v1beta2.KafkaTopic) error {
 	currentTopic, err := t.clientset.KafkaV1beta2().KafkaTopics(topic.Namespace).Get(ctx, topic.Name, metav1.GetOptions{})
 	if err != nil {
+		glog.V(3).Infof("get topic %s failed: %s", topic.Name, err)
 		_, err = t.clientset.KafkaV1beta2().KafkaTopics(topic.Namespace).Create(ctx, &topic, metav1.CreateOptions{})
 		if err != nil {
 			return errors.Wrap(ctx, err, "create topic failed")
@@ -53,7 +54,6 @@ func (t *topicDeployer) Deploy(ctx context.Context, topic v1beta2.KafkaTopic) er
 }
 
 func (t *topicDeployer) Undeploy(ctx context.Context, namespace string, name string) error {
-
 	_, err := t.clientset.KafkaV1beta2().KafkaTopics(namespace).Get(ctx, name, metav1.GetOptions{})
 	if err != nil {
 		glog.V(3).Infof("topic '%s' not found => skip", name)

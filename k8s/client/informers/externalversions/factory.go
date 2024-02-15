@@ -7,13 +7,14 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/bborbe/strimzi/k8s/client/clientset/versioned"
-	internalinterfaces "github.com/bborbe/strimzi/k8s/client/informers/externalversions/internalinterfaces"
-	kafkastrimziio "github.com/bborbe/strimzi/k8s/client/informers/externalversions/kafka.strimzi.io"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
+
+	versioned "github.com/bborbe/strimzi/k8s/client/clientset/versioned"
+	internalinterfaces "github.com/bborbe/strimzi/k8s/client/informers/externalversions/internalinterfaces"
+	kafkastrimziio "github.com/bborbe/strimzi/k8s/client/informers/externalversions/kafka.strimzi.io"
 )
 
 // SharedInformerOption defines the functional option type for SharedInformerFactory.
@@ -177,7 +178,7 @@ func (f *sharedInformerFactory) InformerFor(obj runtime.Object, newFunc internal
 	}
 
 	informer = newFunc(f.client, resyncPeriod)
-	informer.SetTransform(f.transform)
+	_ = informer.SetTransform(f.transform)
 	f.informers[informerType] = informer
 
 	return informer

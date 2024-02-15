@@ -6,14 +6,15 @@ import (
 	"context"
 	time "time"
 
-	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
-	versioned "github.com/bborbe/strimzi/k8s/client/clientset/versioned"
-	internalinterfaces "github.com/bborbe/strimzi/k8s/client/informers/externalversions/internalinterfaces"
-	v1beta2 "github.com/bborbe/strimzi/k8s/client/listers/kafka.strimzi.io/v1beta2"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
+
+	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
+	versioned "github.com/bborbe/strimzi/k8s/client/clientset/versioned"
+	internalinterfaces "github.com/bborbe/strimzi/k8s/client/informers/externalversions/internalinterfaces"
+	v1beta2 "github.com/bborbe/strimzi/k8s/client/listers/kafka.strimzi.io/v1beta2"
 )
 
 // KafkaTopicInformer provides access to a shared informer and lister for

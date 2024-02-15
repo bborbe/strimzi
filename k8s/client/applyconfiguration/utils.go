@@ -3,9 +3,10 @@
 package applyconfiguration
 
 import (
+	schema "k8s.io/apimachinery/pkg/runtime/schema"
+
 	v1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
 	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/client/applyconfiguration/kafka.strimzi.io/v1beta2"
-	schema "k8s.io/apimachinery/pkg/runtime/schema"
 )
 
 // ForKind returns an apply configuration type for the given GroupVersionKind, or nil if no

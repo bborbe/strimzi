@@ -2,17 +2,13 @@
 
 package v1beta2
 
-import (
-	v1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
-)
-
 // KafkaTopicSpecApplyConfiguration represents an declarative configuration of the KafkaTopicSpec type for use
 // with apply.
 type KafkaTopicSpecApplyConfiguration struct {
-	Config     map[string]v1beta2.Value `json:"config,omitempty"`
-	Partitions *int32                   `json:"partitions,omitempty"`
-	Replicas   *int32                   `json:"replicas,omitempty"`
-	TopicName  *string                  `json:"topicName,omitempty"`
+	Config     map[string]string `json:"config,omitempty"`
+	Partitions *int32            `json:"partitions,omitempty"`
+	Replicas   *int32            `json:"replicas,omitempty"`
+	TopicName  *string           `json:"topicName,omitempty"`
 }
 
 // KafkaTopicSpecApplyConfiguration constructs an declarative configuration of the KafkaTopicSpec type for use with
@@ -25,9 +21,9 @@ func KafkaTopicSpec() *KafkaTopicSpecApplyConfiguration {
 // and returns the receiver, so that objects can be build by chaining "With" function invocations.
 // If called multiple times, the entries provided by each call will be put on the Config field,
 // overwriting an existing map entries in Config field with the same key.
-func (b *KafkaTopicSpecApplyConfiguration) WithConfig(entries map[string]v1beta2.Value) *KafkaTopicSpecApplyConfiguration {
+func (b *KafkaTopicSpecApplyConfiguration) WithConfig(entries map[string]string) *KafkaTopicSpecApplyConfiguration {
 	if b.Config == nil && len(entries) > 0 {
-		b.Config = make(map[string]v1beta2.Value, len(entries))
+		b.Config = make(map[string]string, len(entries))
 	}
 	for k, v := range entries {
 		b.Config[k] = v
