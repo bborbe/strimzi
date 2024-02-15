@@ -38,9 +38,9 @@ vulncheck:
 	go run -mod=vendor golang.org/x/vuln/cmd/govulncheck $(shell go list -mod=vendor ./... | grep -v /vendor/)
 
 generatek8s:
-	rm -rf k8s/client
-	# git clone https://github.com/kubernetes/code-generator@release-1.22 ${GOPATH}/src/k8s.io/code-generator
-	${GOPATH}/src/k8s.io/code-generator/generate-groups.sh all \
+	rm -rf k8s/client ${GOPATH}/src/github.com/bborbe/strimzi
+	chmod a+x vendor/k8s.io/code-generator/*.sh
+	bash vendor/k8s.io/code-generator/generate-groups.sh applyconfiguration,client,deepcopy,informer,lister \
 	github.com/bborbe/strimzi/k8s/client github.com/bborbe/strimzi/k8s/apis \
 	kafka.strimzi.io:v1beta2
-	cp -R ${GOPATH}/src/github.com/bborbe/strimzi/k8s ${ROOTDIR}/lib/strimzi
+	cp -R ${GOPATH}/src/github.com/bborbe/strimzi/k8s .

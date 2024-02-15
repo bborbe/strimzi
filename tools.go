@@ -14,4 +14,5 @@ import (
 	_ "github.com/maxbrunsfeld/counterfeiter/v6"
 	_ "golang.org/x/lint/golint"
 	_ "golang.org/x/vuln/cmd/govulncheck"
+	_ "k8s.io/code-generator"
 )
