@@ -22,7 +22,7 @@ type TopicDeployer interface {
 }
 
 func NewTopicDeployer(
-	clientset *versioned.Clientset,
+	clientset versioned.Interface,
 ) TopicDeployer {
 	return &topicDeployer{
 		clientset: clientset,
@@ -30,7 +30,7 @@ func NewTopicDeployer(
 }
 
 type topicDeployer struct {
-	clientset *versioned.Clientset
+	clientset versioned.Interface
 }
 
 func (t *topicDeployer) Deploy(ctx context.Context, topic v1beta2.KafkaTopic) error {

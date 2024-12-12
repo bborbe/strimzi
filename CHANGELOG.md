@@ -10,6 +10,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 
 ## v1.3.1
 
+- return versioned.Interface
+
+## v1.3.2
+
 - return *versioned.Clientset
 
 ## v1.3.0

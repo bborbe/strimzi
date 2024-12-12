@@ -12,7 +12,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-func CreateClientset(ctx context.Context, kubeconfig string) (*versioned.Clientset, error) {
+func CreateClientset(ctx context.Context, kubeconfig string) (versioned.Interface, error) {
 	config, err := k8s.CreateConfig(kubeconfig)
 	if err != nil {
 		return nil, errors.Wrap(err, "create k8s config failed")
