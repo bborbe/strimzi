@@ -1,8 +1,11 @@
 
 default: precommit
 
-precommit: ensure format generate test check addlicense
+precommit: deps ensure format generate test check addlicense
 	@echo "ready to commit"
+
+deps:
+	go install github.com/onsi/ginkgo/v2/ginkgo
 
 ensure:
 	go mod tidy
