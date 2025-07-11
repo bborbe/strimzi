@@ -5,6 +5,7 @@ go 1.24.4
 require (
 	cloud.google.com/go/compute/metadata v0.7.0
 	github.com/actgardner/gogen-avro/v9 v9.2.0
+	github.com/bborbe/collection v1.9.0
 	github.com/bborbe/errors v1.3.0
 	github.com/bborbe/k8s v1.6.0
 	github.com/golang/glog v1.2.5
@@ -23,7 +24,6 @@ require (
 )
 
 require (
-	github.com/bborbe/collection v1.9.0 // indirect
 	github.com/bborbe/run v1.7.2 // indirect
 	github.com/bborbe/validation v1.3.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
