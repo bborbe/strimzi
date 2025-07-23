@@ -13,7 +13,10 @@ import (
 	"github.com/bborbe/strimzi/k8s/client/clientset/versioned"
 )
 
-func CreateClientset(ctx context.Context, kubeconfig string) (versioned.Interface, error) {
+//counterfeiter:generate -o mocks/strimzi-clientset.go --fake-name StrimziClientset . StrimziClientset
+type StrimziClientset = versioned.Interface
+
+func CreateClientset(ctx context.Context, kubeconfig string) (StrimziClientset, error) {
 	config, err := k8s.CreateConfig(kubeconfig)
 	if err != nil {
 		return nil, errors.Wrap(ctx, err, "create k8s config failed")
