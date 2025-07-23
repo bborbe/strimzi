@@ -8,6 +8,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.5.3
+
+- update dependencies to latest versions
+- update Go to 1.24.5
+- add license headers 
+- regenerate mocks with latest counterfeiter
+
 ## v1.5.2
 
 - add tests
