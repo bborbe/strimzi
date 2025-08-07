@@ -193,6 +193,69 @@ var _ = Describe("KafkaTopic", func() {
 				Expect(isEqual).To(BeFalse())
 			})
 		})
+
+		Context("nil spec comparison", func() {
+			BeforeEach(func() {
+				kafkaTopic1.Spec = nil
+				kafkaTopic2.Spec = nil
+			})
+			It("returns true", func() {
+				Expect(isEqual).To(BeTrue())
+			})
+		})
+
+		Context("one nil spec, one set", func() {
+			BeforeEach(func() {
+				kafkaTopic1.Spec = nil
+			})
+			It("returns false", func() {
+				Expect(isEqual).To(BeFalse())
+			})
+		})
+
+		Context("one nil replicas, one set", func() {
+			BeforeEach(func() {
+				kafkaTopic1.Spec.Replicas = nil
+				replicas := int32(2)
+				kafkaTopic2.Spec.Replicas = &replicas
+			})
+			It("returns false", func() {
+				Expect(isEqual).To(BeFalse())
+			})
+		})
+
+		Context("empty vs nil config", func() {
+			BeforeEach(func() {
+				kafkaTopic1.Spec.Config = map[string]string{}
+				kafkaTopic2.Spec.Config = nil
+			})
+			It("returns false", func() {
+				Expect(isEqual).To(BeFalse())
+			})
+		})
+
+		Context("zero value partitions", func() {
+			BeforeEach(func() {
+				zero := int32(0)
+				kafkaTopic1.Spec.Partitions = &zero
+				kafkaTopic2.Spec.Partitions = &zero
+			})
+			It("returns true", func() {
+				Expect(isEqual).To(BeTrue())
+			})
+		})
+
+		Context("one custom topic name, one metadata name", func() {
+			BeforeEach(func() {
+				kafkaTopic1.ObjectMeta.Name = "metadata-name"
+				kafkaTopic2.ObjectMeta.Name = "different-name"
+				customName := "metadata-name"
+				kafkaTopic2.Spec.TopicName = &customName
+			})
+			It("returns true", func() {
+				Expect(isEqual).To(BeTrue())
+			})
+		})
 	})
 })
 

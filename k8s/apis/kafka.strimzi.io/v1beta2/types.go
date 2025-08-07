@@ -27,7 +27,7 @@ type KafkaTopic struct {
 }
 
 func (t KafkaTopic) TopicName() string {
-	if t.Spec.TopicName != nil && *t.Spec.TopicName != "" {
+	if t.Spec != nil && t.Spec.TopicName != nil && *t.Spec.TopicName != "" {
 		return *t.Spec.TopicName
 	}
 	return t.ObjectMeta.Name
@@ -35,6 +35,12 @@ func (t KafkaTopic) TopicName() string {
 
 func (t KafkaTopic) Equal(kafkaTopic KafkaTopic) bool {
 	if t.TopicName() != kafkaTopic.TopicName() {
+		return false
+	}
+	if t.Spec == nil && kafkaTopic.Spec == nil {
+		return true
+	}
+	if t.Spec == nil || kafkaTopic.Spec == nil {
 		return false
 	}
 	if t.Spec.Partitions != kafkaTopic.Spec.Partitions {

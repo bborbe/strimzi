@@ -15,12 +15,28 @@ import (
 	"github.com/bborbe/strimzi/k8s/client/clientset/versioned"
 )
 
+// TopicDeployer provides operations for deploying and managing Kafka topics in Kubernetes.
+// It handles both creation and updates of KafkaTopic custom resources, as well as their removal.
+//
 //counterfeiter:generate -o mocks/topic-deployer.go --fake-name TopicDeployer . TopicDeployer
 type TopicDeployer interface {
+	// Deploy creates or updates a KafkaTopic resource in Kubernetes.
+	// If the topic doesn't exist, it will be created. If it exists, it will be updated
+	// with the new configuration while preserving the resource version.
 	Deploy(ctx context.Context, topic v1beta2.KafkaTopic) error
+
+	// Undeploy removes a KafkaTopic resource from Kubernetes.
+	// If the topic doesn't exist, the operation succeeds silently.
 	Undeploy(ctx context.Context, namespace string, name string) error
 }
 
+// NewTopicDeployer creates a new TopicDeployer instance.
+//
+// Parameters:
+//   - clientset: Strimzi clientset for interacting with KafkaTopic resources
+//
+// Returns:
+//   - TopicDeployer: A new deployer instance for managing Kafka topics
 func NewTopicDeployer(
 	clientset versioned.Interface,
 ) TopicDeployer {
