@@ -35,6 +35,7 @@ import (
 // It includes typed clients for KafkaTopics and other Strimzi resources.
 //
 //counterfeiter:generate -o mocks/strimzi-clientset.go --fake-name StrimziClientset . StrimziClientset
+//nolint:revive // StrimziClientset name is intentional for clarity when used as a standalone package
 type StrimziClientset = versioned.Interface
 
 // CreateClientset creates a new Strimzi clientset for interacting with Kafka custom resources.
