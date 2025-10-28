@@ -8,6 +8,12 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.6.1
+
+- Add mock generation for KafkaV1beta2Interface and KafkaTopicInterface
+- Consolidate mock type aliases into strimzi_mocks.go
+- Improve code organization with proper GoDoc comments
+
 ## v1.6.0
 
 - Add golangci-lint configuration and linting to build pipeline
