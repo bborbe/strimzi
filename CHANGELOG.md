@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.7.2
+
+- Update Go to 1.25.6
+- Update github.com/bborbe/k8s to v1.12.1
+- Update github.com/onsi/ginkgo/v2 to v2.28.1
+- Update github.com/onsi/gomega to v1.39.1
+- Update various indirect dependencies and tooling
+
 ## v1.7.1
 
 - Update Go to 1.25.5

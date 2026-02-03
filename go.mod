@@ -1,6 +1,6 @@
 module github.com/bborbe/strimzi
 
-go 1.25.5
+go 1.25.6
 
 replace (
 	k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20250701173324-9bd5c66d9911
@@ -11,14 +11,14 @@ require (
 	github.com/actgardner/gogen-avro/v9 v9.2.0
 	github.com/bborbe/collection v1.20.1
 	github.com/bborbe/errors v1.5.1
-	github.com/bborbe/k8s v1.12.0
+	github.com/bborbe/k8s v1.12.1
 	github.com/golang/glog v1.2.5
 	github.com/google/addlicense v1.2.0
 	github.com/incu6us/goimports-reviser/v3 v3.11.0
 	github.com/kisielk/errcheck v1.9.0
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.12.1
-	github.com/onsi/ginkgo/v2 v2.27.5
-	github.com/onsi/gomega v1.39.0
+	github.com/onsi/ginkgo/v2 v2.28.1
+	github.com/onsi/gomega v1.39.1
 	github.com/shoenig/go-modtool v0.5.0
 	golang.org/x/lint v0.0.0-20241112194109-818c5a804067
 	golang.org/x/vuln v1.1.4
@@ -77,11 +77,11 @@ require (
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
 	github.com/aymerick/douceur v0.2.0 // indirect
-	github.com/bborbe/math v1.2.0 // indirect
-	github.com/bborbe/parse v1.8.3 // indirect
+	github.com/bborbe/math v1.2.1 // indirect
+	github.com/bborbe/parse v1.9.1 // indirect
 	github.com/bborbe/run v1.9.1 // indirect
-	github.com/bborbe/time v1.20.0 // indirect
-	github.com/bborbe/validation v1.3.3 // indirect
+	github.com/bborbe/time v1.21.0 // indirect
+	github.com/bborbe/validation v1.4.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bkielbasa/cyclop v1.2.3 // indirect
 	github.com/blizzy78/varnamelen v0.8.0 // indirect
@@ -208,7 +208,7 @@ require (
 	github.com/google/jsonschema-go v0.3.0 // indirect
 	github.com/google/osv-scalibr v0.4.1-0.20251202121049-5e7e15f4a036 // indirect
 	github.com/google/osv-scanner/v2 v2.3.1 // indirect
-	github.com/google/pprof v0.0.0-20250923004556-9e5a51aed1e8 // indirect
+	github.com/google/pprof v0.0.0-20260115054156-294ebfa9ad83 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.6 // indirect
@@ -416,16 +416,16 @@ require (
 	golang.org/x/crypto v0.47.0 // indirect
 	golang.org/x/exp v0.0.0-20250911091902-df9299821621 // indirect
 	golang.org/x/exp/typeparams v0.0.0-20250210185358-939b2ce775ac // indirect
-	golang.org/x/mod v0.31.0 // indirect
-	golang.org/x/net v0.48.0 // indirect
+	golang.org/x/mod v0.32.0 // indirect
+	golang.org/x/net v0.49.0 // indirect
 	golang.org/x/oauth2 v0.32.0 // indirect
 	golang.org/x/sync v0.19.0 // indirect
 	golang.org/x/sys v0.40.0 // indirect
-	golang.org/x/telemetry v0.0.0-20251203150158-8fff8a5912fc // indirect
+	golang.org/x/telemetry v0.0.0-20260109210033-bd525da824e2 // indirect
 	golang.org/x/term v0.39.0 // indirect
 	golang.org/x/text v0.33.0 // indirect
 	golang.org/x/time v0.13.0 // indirect
-	golang.org/x/tools v0.40.0 // indirect
+	golang.org/x/tools v0.41.0 // indirect
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da // indirect
 	google.golang.org/genai v1.37.0 // indirect
 	google.golang.org/genproto v0.0.0-20250707201910-8d1bb00bc6a7 // indirect
@@ -441,7 +441,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	honnef.co/go/tools v0.6.1 // indirect
 	k8s.io/api v0.33.7 // indirect
-	k8s.io/apiextensions-apiserver v0.33.6 // indirect
+	k8s.io/apiextensions-apiserver v0.33.7 // indirect
 	k8s.io/gengo/v2 v2.0.0-20250604051438-85fd79dbfd9f // indirect
 	k8s.io/klog/v2 v2.130.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20250710124328-f3f2b991d03b // indirect
