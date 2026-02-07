@@ -57,3 +57,7 @@ dist/
 .claude
 CLAUDE.md
 
+/.update-logs/
+/.claude/
+/CLAUDE.md
+/.mcp-*
