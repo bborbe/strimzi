@@ -61,7 +61,7 @@ var _ = Describe("CreateClientset", func() {
 
 			_, err = tmpFile.WriteString("invalid yaml content: [")
 			Expect(err).To(BeNil())
-			tmpFile.Close()
+			_ = tmpFile.Close()
 		})
 
 		AfterEach(func() {
@@ -96,7 +96,7 @@ spec:
   someField: value
 `)
 			Expect(err).To(BeNil())
-			tmpFile.Close()
+			_ = tmpFile.Close()
 		})
 
 		AfterEach(func() {

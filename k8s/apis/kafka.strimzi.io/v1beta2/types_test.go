@@ -28,7 +28,7 @@ var _ = Describe("KafkaTopic", func() {
 		})
 		Context("no topicName", func() {
 			BeforeEach(func() {
-				kafkaTopic.ObjectMeta.Name = "meta-name"
+				kafkaTopic.Name = "meta-name"
 				kafkaTopic.Spec.TopicName = nil
 			})
 			It("returns no error", func() {
@@ -37,7 +37,7 @@ var _ = Describe("KafkaTopic", func() {
 		})
 		Context("topicName", func() {
 			BeforeEach(func() {
-				kafkaTopic.ObjectMeta.Name = "meta-name"
+				kafkaTopic.Name = "meta-name"
 				s := "spec-name"
 				kafkaTopic.Spec.TopicName = &s
 			})
@@ -47,7 +47,7 @@ var _ = Describe("KafkaTopic", func() {
 		})
 		Context("empty topicName", func() {
 			BeforeEach(func() {
-				kafkaTopic.ObjectMeta.Name = "meta-name"
+				kafkaTopic.Name = "meta-name"
 				empty := ""
 				kafkaTopic.Spec.TopicName = &empty
 			})
@@ -94,7 +94,7 @@ var _ = Describe("KafkaTopic", func() {
 
 		Context("different topic names", func() {
 			BeforeEach(func() {
-				kafkaTopic2.ObjectMeta.Name = "different-topic"
+				kafkaTopic2.Name = "different-topic"
 			})
 			It("returns false", func() {
 				Expect(isEqual).To(BeFalse())
@@ -247,8 +247,8 @@ var _ = Describe("KafkaTopic", func() {
 
 		Context("one custom topic name, one metadata name", func() {
 			BeforeEach(func() {
-				kafkaTopic1.ObjectMeta.Name = "metadata-name"
-				kafkaTopic2.ObjectMeta.Name = "different-name"
+				kafkaTopic1.Name = "metadata-name"
+				kafkaTopic2.Name = "different-name"
 				customName := "metadata-name"
 				kafkaTopic2.Spec.TopicName = &customName
 			})

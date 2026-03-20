@@ -30,7 +30,7 @@ func (t KafkaTopic) TopicName() string {
 	if t.Spec != nil && t.Spec.TopicName != nil && *t.Spec.TopicName != "" {
 		return *t.Spec.TopicName
 	}
-	return t.ObjectMeta.Name
+	return t.Name
 }
 
 func (t KafkaTopic) Equal(kafkaTopic KafkaTopic) bool {

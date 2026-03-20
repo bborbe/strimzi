@@ -89,6 +89,6 @@ func (t *topicDeployer) Undeploy(ctx context.Context, namespace string, name str
 }
 
 func mergeTopic(currentTopic, newTopic v1beta2.KafkaTopic) v1beta2.KafkaTopic {
-	newTopic.ObjectMeta.ResourceVersion = currentTopic.ObjectMeta.ResourceVersion
+	newTopic.ResourceVersion = currentTopic.ResourceVersion
 	return newTopic
 }

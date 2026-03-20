@@ -10,6 +10,7 @@ package tools
 import (
 	_ "cloud.google.com/go/compute/metadata"
 	_ "github.com/actgardner/gogen-avro/v9/cmd/gogen-avro"
+	_ "github.com/golangci/golangci-lint/v2/cmd/golangci-lint"
 	_ "github.com/google/addlicense"
 	_ "github.com/incu6us/goimports-reviser/v3"
 	_ "github.com/kisielk/errcheck"
