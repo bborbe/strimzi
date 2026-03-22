@@ -20,8 +20,8 @@ linters:
       rules:
         Main:
           deny:
-            - pkg: "github.com/pkg/erros"
-              desc: "use github.com/bborbe/erros instead"
+            - pkg: "github.com/pkg/errors"
+              desc: "use github.com/bborbe/errors instead"
   exclusions:
     presets:
       - comments
