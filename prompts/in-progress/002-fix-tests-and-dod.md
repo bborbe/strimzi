@@ -1,7 +1,11 @@
 ---
-status: approved
+status: failed
+container: strimzi-002-fix-tests-and-dod
+dark-factory-version: v0.59.5-dirty
 created: "2026-03-20T14:24:31Z"
 queued: "2026-03-20T14:24:31Z"
+started: "2026-03-20T16:34:59Z"
+completed: "2026-03-20T16:49:27Z"
 ---
 
 <summary>

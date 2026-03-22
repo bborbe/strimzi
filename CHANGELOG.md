@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.0
+
+- upgrade k8s dependencies from v0.33 to v0.35
+- migrate structured-merge-diff from v4 to v6
+- add GetKind, GetAPIVersion, GetNamespace, IsApplyConfiguration methods to apply config types
+- NewTypeConverter now returns managedfields.TypeConverter interface instead of concrete type
+- update bborbe/* and other indirect dependencies
+
 ## v1.7.6
 
 - chore: verified all tests pass, linting succeeds, and project meets Definition of Done criteria

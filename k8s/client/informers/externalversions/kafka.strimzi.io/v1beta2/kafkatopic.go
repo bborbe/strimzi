@@ -9,15 +9,14 @@ import (
 	context "context"
 	time "time"
 
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	runtime "k8s.io/apimachinery/pkg/runtime"
-	watch "k8s.io/apimachinery/pkg/watch"
-	cache "k8s.io/client-go/tools/cache"
-
 	apiskafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
 	versioned "github.com/bborbe/strimzi/k8s/client/clientset/versioned"
 	internalinterfaces "github.com/bborbe/strimzi/k8s/client/informers/externalversions/internalinterfaces"
 	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/client/listers/kafka.strimzi.io/v1beta2"
+	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	runtime "k8s.io/apimachinery/pkg/runtime"
+	watch "k8s.io/apimachinery/pkg/watch"
+	cache "k8s.io/client-go/tools/cache"
 )
 
 // KafkaTopicInformer provides access to a shared informer and lister for
@@ -45,7 +44,7 @@ func NewKafkaTopicInformer(client versioned.Interface, namespace string, resyncP
 // one. This reduces memory footprint and number of connections to the server.
 func NewFilteredKafkaTopicInformer(client versioned.Interface, namespace string, resyncPeriod time.Duration, indexers cache.Indexers, tweakListOptions internalinterfaces.TweakListOptionsFunc) cache.SharedIndexInformer {
 	return cache.NewSharedIndexInformer(
-		&cache.ListWatch{
+		cache.ToListWatcherWithWatchListSemantics(&cache.ListWatch{
 			ListFunc: func(options v1.ListOptions) (runtime.Object, error) {
 				if tweakListOptions != nil {
 					tweakListOptions(&options)
@@ -70,7 +69,7 @@ func NewFilteredKafkaTopicInformer(client versioned.Interface, namespace string,
 				}
 				return client.KafkaV1beta2().KafkaTopics(namespace).Watch(ctx, options)
 			},
-		},
+		}, client),
 		&apiskafkastrimziiov1beta2.KafkaTopic{},
 		resyncPeriod,
 		indexers,

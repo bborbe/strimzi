@@ -9,11 +9,10 @@ import (
 	fmt "fmt"
 	http "net/http"
 
+	kafkav1beta2 "github.com/bborbe/strimzi/k8s/client/clientset/versioned/typed/kafka.strimzi.io/v1beta2"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
-
-	kafkav1beta2 "github.com/bborbe/strimzi/k8s/client/clientset/versioned/typed/kafka.strimzi.io/v1beta2"
 )
 
 type Interface interface {

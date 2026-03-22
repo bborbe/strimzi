@@ -8,11 +8,19 @@ package v1beta2
 // KafkaTopicStatusConditionsElemApplyConfiguration represents a declarative configuration of the KafkaTopicStatusConditionsElem type for use
 // with apply.
 type KafkaTopicStatusConditionsElemApplyConfiguration struct {
+	// Last time the condition of a type changed from one status to another. The
+	// required format is 'yyyy-MM-ddTHH:mm:ssZ', in the UTC time zone.
 	LastTransitionTime *string `json:"lastTransitionTime,omitempty"`
-	Message            *string `json:"message,omitempty"`
-	Reason             *string `json:"reason,omitempty"`
-	Status             *string `json:"status,omitempty"`
-	Type               *string `json:"type,omitempty"`
+	// Human-readable message indicating details about the condition's last
+	// transition.
+	Message *string `json:"message,omitempty"`
+	// The reason for the condition's last transition (a single word in CamelCase).
+	Reason *string `json:"reason,omitempty"`
+	// The status of the condition, either True, False or Unknown.
+	Status *string `json:"status,omitempty"`
+	// The unique identifier of a condition, used to distinguish between other
+	// conditions in the resource.
+	Type *string `json:"type,omitempty"`
 }
 
 // KafkaTopicStatusConditionsElemApplyConfiguration constructs a declarative configuration of the KafkaTopicStatusConditionsElem type for use with

@@ -7,10 +7,17 @@ package v1beta2
 
 // KafkaTopicStatusApplyConfiguration represents a declarative configuration of the KafkaTopicStatus type for use
 // with apply.
+//
+// The topic configuration.
+// type KafkaTopicSpecConfig map[string]interface{}
+// The status of the topic.
 type KafkaTopicStatusApplyConfiguration struct {
-	Conditions         []KafkaTopicStatusConditionsElemApplyConfiguration `json:"conditions,omitempty"`
-	ObservedGeneration *int32                                             `json:"observedGeneration,omitempty"`
-	TopicName          *string                                            `json:"topicName,omitempty"`
+	// List of status conditions.
+	Conditions []KafkaTopicStatusConditionsElemApplyConfiguration `json:"conditions,omitempty"`
+	// The generation of the CRD that was last reconciled by the operator.
+	ObservedGeneration *int32 `json:"observedGeneration,omitempty"`
+	// Topic name.
+	TopicName *string `json:"topicName,omitempty"`
 }
 
 // KafkaTopicStatusApplyConfiguration constructs a declarative configuration of the KafkaTopicStatus type for use with

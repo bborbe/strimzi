@@ -8,10 +8,9 @@ package v1beta2
 import (
 	http "net/http"
 
-	rest "k8s.io/client-go/rest"
-
 	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
 	scheme "github.com/bborbe/strimzi/k8s/client/clientset/versioned/scheme"
+	rest "k8s.io/client-go/rest"
 )
 
 type KafkaV1beta2Interface interface {

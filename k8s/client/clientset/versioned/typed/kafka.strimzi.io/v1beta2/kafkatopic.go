@@ -8,14 +8,13 @@ package v1beta2
 import (
 	context "context"
 
+	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
+	applyconfigurationkafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/client/applyconfiguration/kafka.strimzi.io/v1beta2"
+	scheme "github.com/bborbe/strimzi/k8s/client/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	gentype "k8s.io/client-go/gentype"
-
-	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
-	applyconfigurationkafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/client/applyconfiguration/kafka.strimzi.io/v1beta2"
-	scheme "github.com/bborbe/strimzi/k8s/client/clientset/versioned/scheme"
 )
 
 // KafkaTopicsGetter has a method to return a KafkaTopicInterface.

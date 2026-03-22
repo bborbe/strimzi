@@ -14,10 +14,12 @@ import (
 // KafkaTopicApplyConfiguration represents a declarative configuration of the KafkaTopic type for use
 // with apply.
 type KafkaTopicApplyConfiguration struct {
+	// The specification of the topic.
 	v1.TypeMetaApplyConfiguration    `json:",inline"`
 	*v1.ObjectMetaApplyConfiguration `json:"metadata,omitempty"`
-	Spec                             *KafkaTopicSpecApplyConfiguration   `json:"spec,omitempty"`
-	Status                           *KafkaTopicStatusApplyConfiguration `json:"status,omitempty"`
+	Spec                             *KafkaTopicSpecApplyConfiguration `json:"spec,omitempty"`
+	// The status of the topic.
+	Status *KafkaTopicStatusApplyConfiguration `json:"status,omitempty"`
 }
 
 // KafkaTopic constructs a declarative configuration of the KafkaTopic type for use with
@@ -30,6 +32,8 @@ func KafkaTopic(name, namespace string) *KafkaTopicApplyConfiguration {
 	b.WithAPIVersion("kafka/v1beta2")
 	return b
 }
+
+func (b KafkaTopicApplyConfiguration) IsApplyConfiguration() {}
 
 // WithKind sets the Kind field in the declarative configuration to the given value
 // and returns the receiver, so that objects can be built by chaining "With" function invocations.
@@ -205,8 +209,24 @@ func (b *KafkaTopicApplyConfiguration) WithStatus(value *KafkaTopicStatusApplyCo
 	return b
 }
 
+// GetKind retrieves the value of the Kind field in the declarative configuration.
+func (b *KafkaTopicApplyConfiguration) GetKind() *string {
+	return b.TypeMetaApplyConfiguration.Kind
+}
+
+// GetAPIVersion retrieves the value of the APIVersion field in the declarative configuration.
+func (b *KafkaTopicApplyConfiguration) GetAPIVersion() *string {
+	return b.TypeMetaApplyConfiguration.APIVersion
+}
+
 // GetName retrieves the value of the Name field in the declarative configuration.
 func (b *KafkaTopicApplyConfiguration) GetName() *string {
 	b.ensureObjectMetaApplyConfigurationExists()
 	return b.ObjectMetaApplyConfiguration.Name
+}
+
+// GetNamespace retrieves the value of the Namespace field in the declarative configuration.
+func (b *KafkaTopicApplyConfiguration) GetNamespace() *string {
+	b.ensureObjectMetaApplyConfigurationExists()
+	return b.ObjectMetaApplyConfiguration.Namespace
 }

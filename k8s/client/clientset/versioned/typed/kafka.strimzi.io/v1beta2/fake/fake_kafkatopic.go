@@ -6,11 +6,10 @@
 package fake
 
 import (
-	gentype "k8s.io/client-go/gentype"
-
 	v1beta2 "github.com/bborbe/strimzi/k8s/apis/kafka.strimzi.io/v1beta2"
 	kafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/client/applyconfiguration/kafka.strimzi.io/v1beta2"
 	typedkafkastrimziiov1beta2 "github.com/bborbe/strimzi/k8s/client/clientset/versioned/typed/kafka.strimzi.io/v1beta2"
+	gentype "k8s.io/client-go/gentype"
 )
 
 // fakeKafkaTopics implements KafkaTopicInterface
