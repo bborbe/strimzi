@@ -8,6 +8,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.1
+
+- Update numerous indirect dependencies (docker, containerd, opentelemetry, go-openapi, moby/buildkit)
+- Add replace directives for denis-tingaikin/go-header and opencontainers/runtime-spec
+- Add go-openapi/swag sub-packages
+- Remove josharian/intern and mailru/easyjson indirect deps
+
 ## v1.8.0
 
 - upgrade k8s dependencies from v0.33 to v0.35
