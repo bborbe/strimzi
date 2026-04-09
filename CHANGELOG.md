@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.2
+
+- Bump bborbe/collection, errors, k8s dependencies
+- Upgrade golangci-lint v2.11.4, counterfeiter v6.12.2, go-modtool v0.7.1
+- Update Go toolchain to 1.26.2
+- Add vuln ignore entries for bbolt and aws-sdk-go-v2 CVEs
+- Improve vulncheck Makefile target with JSON filtering
+
 ## v1.8.1
 
 - Update numerous indirect dependencies (docker, containerd, opentelemetry, go-openapi, moby/buildkit)
