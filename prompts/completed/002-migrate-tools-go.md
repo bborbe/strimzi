@@ -1,11 +1,12 @@
 ---
-status: committing
+status: completed
 summary: Migrated from tools.go to tools.env + Makefile @version pattern; go.mod reduced from 301 to 77 lines, replace block removed, all stale CVE suppressions cleared, make precommit passes with exit code 0.
 container: strimzi-002-migrate-tools-go
 dark-factory-version: dev
 created: "2026-04-30T20:24:38Z"
 queued: "2026-04-30T20:24:38Z"
 started: "2026-04-30T20:27:19Z"
+completed: "2026-04-30T20:37:38Z"
 ---
 
 # Migrate from tools.go to tools.env + Makefile @version pattern
