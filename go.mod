@@ -1,17 +1,17 @@
 module github.com/bborbe/strimzi
 
-go 1.26.2
+go 1.26.3
 
 require (
-	github.com/bborbe/collection v1.20.11
-	github.com/bborbe/errors v1.5.11
+	github.com/bborbe/collection v1.20.12
+	github.com/bborbe/errors v1.5.13
 	github.com/bborbe/k8s v1.14.1
 	github.com/golang/glog v1.2.5
 	github.com/onsi/ginkgo/v2 v2.28.3
 	github.com/onsi/gomega v1.40.0
 	k8s.io/apimachinery v0.36.0
 	k8s.io/client-go v0.36.0
-	sigs.k8s.io/structured-merge-diff/v6 v6.3.2
+	sigs.k8s.io/structured-merge-diff/v6 v6.4.0
 )
 
 require (

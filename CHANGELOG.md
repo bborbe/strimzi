@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.8.4
+
+- bump go 1.26.2 → 1.26.3
+- bump bborbe/collection v1.20.11 → v1.20.12
+- bump bborbe/errors v1.5.11 → v1.5.13
+- bump sigs.k8s.io/structured-merge-diff/v6 v6.3.2 → v6.4.0
+
 ## v1.8.3
 
 - chore: Migrate to tools.env + Makefile @version pattern; remove tools.go and obsolete replace block. go.mod reduced from 301 to 77 lines

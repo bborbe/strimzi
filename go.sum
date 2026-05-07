@@ -1,9 +1,9 @@
 github.com/Masterminds/semver/v3 v3.4.0 h1:Zog+i5UMtVoCU8oKka5P7i9q9HgrJeGzI9SA1Xbatp0=
 github.com/Masterminds/semver/v3 v3.4.0/go.mod h1:4V+yj/TJE1HU9XfppCwVMZq3I84lprf4nC11bSS5beM=
-github.com/bborbe/collection v1.20.11 h1:Gi/wpeD6XKiuhy1VXtv13XLZ4VZwVZa1DrWegl8c9Ao=
-github.com/bborbe/collection v1.20.11/go.mod h1:RxYnL2UvtnE04olbxevt8Oxhm6NkIbkTeL9ZrQhkaSw=
-github.com/bborbe/errors v1.5.11 h1:sImzniOFArKz3vHczCQVhlawMcDRQFtc4QjuLqMAkd8=
-github.com/bborbe/errors v1.5.11/go.mod h1:VSO4Gi1kFZavekg0xGeSpdkoFahbM0Hs01YrPDHeD9s=
+github.com/bborbe/collection v1.20.12 h1:FUiCMioYDmNlPidUQ26NbnN7D0JBsiZfHUVjvCdS+YU=
+github.com/bborbe/collection v1.20.12/go.mod h1:S+agk3S8rIFGh7/XstkM5jBdl/DMec2TxQRGoeYx+fc=
+github.com/bborbe/errors v1.5.13 h1:h2F5R6cL5R+DnUmwFEKziRTzcsKrLlhCrPbKwzfcBo4=
+github.com/bborbe/errors v1.5.13/go.mod h1:yRcmhOEgO6Htvibc63ALT1f1tNrBlWk7n5o6lZ8FOTQ=
 github.com/bborbe/k8s v1.14.1 h1:Jnzo2nV8vvLMEFSWinYQu+YAMYmoMr6ZF4Me0/nBfA4=
 github.com/bborbe/k8s v1.14.1/go.mod h1:vOXdjozW6XYi1IXqptMwmtRvdItXicLhAc1coocqi9M=
 github.com/bborbe/math v1.3.9 h1:jVym2NZ5ELF8ZHNJd2tdP8FiIVX1LZkkakKpXnhsUug=
@@ -191,7 +191,7 @@ sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 h1:IpInykpT6ceI+QxKBbEflcR5E
 sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730/go.mod h1:mdzfpAEoE6DHQEN0uh9ZbOCuHbLK5wOm7dK4ctXE9Tg=
 sigs.k8s.io/randfill v1.0.0 h1:JfjMILfT8A6RbawdsK2JXGBR5AQVfd+9TbzrlneTyrU=
 sigs.k8s.io/randfill v1.0.0/go.mod h1:XeLlZ/jmk4i1HRopwe7/aU3H5n1zNUcX6TM94b3QxOY=
-sigs.k8s.io/structured-merge-diff/v6 v6.3.2 h1:kwVWMx5yS1CrnFWA/2QHyRVJ8jM6dBA80uLmm0wJkk8=
-sigs.k8s.io/structured-merge-diff/v6 v6.3.2/go.mod h1:M3W8sfWvn2HhQDIbGWj3S099YozAsymCo/wrT5ohRUE=
+sigs.k8s.io/structured-merge-diff/v6 v6.4.0 h1:qmp2e3ZfFi1/jJbDGpD4mt3wyp6PE1NfKHCYLqgNQJo=
+sigs.k8s.io/structured-merge-diff/v6 v6.4.0/go.mod h1:M3W8sfWvn2HhQDIbGWj3S099YozAsymCo/wrT5ohRUE=
 sigs.k8s.io/yaml v1.6.0 h1:G8fkbMSAFqgEFgh4b1wmtzDnioxFCUgTZhlbj5P9QYs=
 sigs.k8s.io/yaml v1.6.0/go.mod h1:796bPqUfzR/0jLAl6XjHl3Ck7MiyVv8dbTdyT3/pMf4=
