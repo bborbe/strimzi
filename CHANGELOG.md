@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.8.5
+
+- bump go 1.26.3 → 1.26.4
+- bump k8s.io/apimachinery+client-go+api+apiextensions v0.36.0 → v0.36.1
+- bump onsi/ginkgo v2.28.3 → v2.29.0, gomega v1.40.0 → v1.41.0
+- bump golang.org/x/net+sys+term+text for vuln fixes
+- drop standalone errcheck/gosec targets; inline into golangci-yml
+
 ## v1.8.4
 
 - bump go 1.26.2 → 1.26.3

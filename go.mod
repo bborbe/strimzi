@@ -1,26 +1,26 @@
 module github.com/bborbe/strimzi
 
-go 1.26.3
+go 1.26.4
 
 require (
 	github.com/bborbe/collection v1.20.12
 	github.com/bborbe/errors v1.5.13
-	github.com/bborbe/k8s v1.14.1
+	github.com/bborbe/k8s v1.14.3
 	github.com/golang/glog v1.2.5
-	github.com/onsi/ginkgo/v2 v2.28.3
-	github.com/onsi/gomega v1.40.0
-	k8s.io/apimachinery v0.36.0
-	k8s.io/client-go v0.36.0
+	github.com/onsi/ginkgo/v2 v2.29.0
+	github.com/onsi/gomega v1.41.0
+	k8s.io/apimachinery v0.36.1
+	k8s.io/client-go v0.36.1
 	sigs.k8s.io/structured-merge-diff/v6 v6.4.0
 )
 
 require (
 	github.com/Masterminds/semver/v3 v3.4.0 // indirect
 	github.com/bborbe/math v1.3.9 // indirect
-	github.com/bborbe/parse v1.10.11 // indirect
+	github.com/bborbe/parse v1.10.12 // indirect
 	github.com/bborbe/run v1.9.23 // indirect
-	github.com/bborbe/time v1.25.10 // indirect
-	github.com/bborbe/validation v1.4.12 // indirect
+	github.com/bborbe/time v1.27.0 // indirect
+	github.com/bborbe/validation v1.4.13 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
@@ -66,12 +66,16 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/api v0.36.0 // indirect
-	k8s.io/apiextensions-apiserver v0.36.0 // indirect
+	k8s.io/api v0.36.1 // indirect
+	k8s.io/apiextensions-apiserver v0.36.1 // indirect
 	k8s.io/klog/v2 v2.140.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20260317180543-43fb72c5454a // indirect
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2 // indirect
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
+)
+
+exclude (
+	cloud.google.com/go v0.26.0
 )
