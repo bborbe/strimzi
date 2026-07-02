@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.8.6
+
+- bump k8s.io dependencies to v0.36.2 (apimachinery, client-go, api)
+- bump onsi/ginkgo to v2.32.0 and onsi/gomega to v1.42.1
+- bump golang.org/x/* dependencies
+- bump bborbe/collection, bborbe/run, getsentry/sentry-go
+
 ## v1.8.5
 
 - bump go 1.26.3 → 1.26.4
