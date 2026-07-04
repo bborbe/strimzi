@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.8.7
+
+- Bump github.com/bborbe/collection to v1.20.15
+- Bump github.com/bborbe/errors to v1.5.15
+- Bump github.com/bborbe/run to v1.9.28 (indirect)
+
 ## v1.8.6
 
 - bump k8s.io dependencies to v0.36.2 (apimachinery, client-go, api)

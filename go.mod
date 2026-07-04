@@ -3,8 +3,8 @@ module github.com/bborbe/strimzi
 go 1.26.4
 
 require (
-	github.com/bborbe/collection v1.20.13
-	github.com/bborbe/errors v1.5.13
+	github.com/bborbe/collection v1.20.15
+	github.com/bborbe/errors v1.5.15
 	github.com/bborbe/k8s v1.14.3
 	github.com/golang/glog v1.2.5
 	github.com/onsi/ginkgo/v2 v2.32.0
@@ -18,7 +18,7 @@ require (
 	github.com/Masterminds/semver/v3 v3.4.0 // indirect
 	github.com/bborbe/math v1.3.9 // indirect
 	github.com/bborbe/parse v1.10.12 // indirect
-	github.com/bborbe/run v1.9.27 // indirect
+	github.com/bborbe/run v1.9.28 // indirect
 	github.com/bborbe/time v1.27.0 // indirect
 	github.com/bborbe/validation v1.4.13 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
