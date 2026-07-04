@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.8.8
+
+- Bump github.com/bborbe/k8s to v1.14.4
+- Bump github.com/bborbe/time, math, parse, validation dependencies
+- Bump k8s.io/apiextensions-apiserver to v0.36.2
+
 ## v1.8.7
 
 - Bump github.com/bborbe/collection to v1.20.15
