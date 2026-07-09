@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.8.9
+
+- Bump go.mod dependencies (collection, errors, k8s, math, parse, run, time, validation)
+- Bump structured-merge-diff to v6.4.2
+- Bump sentry-go to v0.47.0
+- Bump go toolchain to 1.26.5
+
 ## v1.8.8
 
 - Bump github.com/bborbe/k8s to v1.14.4
