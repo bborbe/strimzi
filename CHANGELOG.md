@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+- Bump `golang.org/x/text` to v0.39.0 (CVE-2026-56852)
+
 ## v1.8.9
 
 - Bump go.mod dependencies (collection, errors, k8s, math, parse, run, time, validation)
