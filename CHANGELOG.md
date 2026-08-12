@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## v1.8.11
 
 - fix: make the malformed-kubeconfig spec environment-aware so the suite passes both inside and outside a Kubernetes pod
 
