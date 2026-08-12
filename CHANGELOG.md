@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+- fix: make the malformed-kubeconfig spec environment-aware so the suite passes both inside and outside a Kubernetes pod
+
 ## v1.8.10
 
 - Bump `golang.org/x/text` to v0.39.0 (CVE-2026-56852)
