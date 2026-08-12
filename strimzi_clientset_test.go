@@ -107,6 +107,15 @@ spec:
 
 		It("returns error for malformed k8s config", func() {
 			clientset, err := strimzi.CreateClientset(ctx, tempFile)
+			if runningInCluster() {
+				// The file is valid YAML but declares no clusters/contexts, so
+				// clientcmd's deferred loader treats it as empty and falls back
+				// to the in-cluster config — which succeeds inside a pod.
+				Expect(err).NotTo(HaveOccurred())
+				Expect(clientset).NotTo(BeNil())
+				return
+			}
+			// Outside a cluster there is no fallback, so loading fails.
 			Expect(err).To(HaveOccurred())
 			Expect(clientset).To(BeNil())
 		})
@@ -137,3 +146,14 @@ spec:
 		})
 	})
 })
+
+// runningInCluster reports whether an in-cluster fallback can succeed, mirroring
+// rest.InClusterConfig's own preconditions: the service host env var AND a mounted
+// service-account token. The env var alone is not enough.
+func runningInCluster() bool {
+	if os.Getenv("KUBERNETES_SERVICE_HOST") == "" {
+		return false
+	}
+	_, err := os.Stat("/var/run/secrets/kubernetes.io/serviceaccount/token")
+	return err == nil
+}
