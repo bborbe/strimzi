@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+- update Go to 1.26.6 and update dependencies (bborbe/math, bborbe/parse, bborbe/run, bborbe/validation, golang.org/x/mod, golang.org/x/tools)
+
 ## v1.8.12
 
 - update Go to 1.26.5 and update dependencies (bborbe/collection, bborbe/errors, bborbe/k8s, bborbe/math, bborbe/parse, bborbe/run, bborbe/time, bborbe/validation, fxamacker/cbor, getsentry/sentry-go, go-openapi, golang.org/x/*, k8s.io/*)
