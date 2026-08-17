@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## v1.8.13
 
 - update Go to 1.26.6 and update dependencies (bborbe/math, bborbe/parse, bborbe/run, bborbe/validation, golang.org/x/mod, golang.org/x/tools)
 
