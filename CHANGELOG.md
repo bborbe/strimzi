@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+- chore: Run gofmt -w last in the `format` target so golines wrapping is normalized before the gofmt lint check
+- chore: Bump golangci-lint to v2.13.1 and errcheck to v1.20.0 in tools.env (Go 1.27 toolchain compatibility)
+
 ## v1.8.13
 
 - update Go to 1.26.6 and update dependencies (bborbe/math, bborbe/parse, bborbe/run, bborbe/validation, golang.org/x/mod, golang.org/x/tools)
