@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## v1.8.16
 
 - chore: update github.com/bborbe/collection to v1.20.25, github.com/bborbe/errors to v1.6.0, github.com/bborbe/k8s to v1.14.16
 
