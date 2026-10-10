@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## v1.8.19
 
 - chore: update Go to 1.27.2 and github.com/bborbe/collection to v1.21.0, github.com/bborbe/k8s to v1.14.20, k8s.io/apimachinery to v0.38.0-alpha.1, k8s.io/client-go to v0.38.0-alpha.1
 
