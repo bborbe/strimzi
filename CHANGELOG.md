@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## v1.8.21
 
 - chore: update github.com/bborbe/collection to v1.21.2, github.com/bborbe/errors to v1.6.3, github.com/bborbe/k8s to v1.14.23, github.com/onsi/ginkgo/v2 to v2.33.1, github.com/onsi/gomega to v1.44.0, k8s.io/apimachinery to v0.38.0-alpha.2, k8s.io/client-go to v0.38.0-alpha.2
 
