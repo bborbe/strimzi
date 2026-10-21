@@ -1,9 +1,9 @@
 module github.com/bborbe/strimzi
 
-go 1.27.2
+go 1.27.3
 
 require (
-	github.com/bborbe/collection v1.21.2
+	github.com/bborbe/collection v1.21.3
 	github.com/bborbe/errors v1.6.3
 	github.com/bborbe/k8s v1.14.23
 	github.com/golang/glog v1.2.5
@@ -17,7 +17,7 @@ require (
 require (
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
 	github.com/bborbe/math v1.4.15 // indirect
-	github.com/bborbe/parse v1.12.3 // indirect
+	github.com/bborbe/parse v1.12.4 // indirect
 	github.com/bborbe/run v1.11.2 // indirect
 	github.com/bborbe/time v1.27.17 // indirect
 	github.com/bborbe/validation v1.5.5 // indirect
@@ -36,7 +36,7 @@ require (
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/google/gnostic-models v0.7.1 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect
-	github.com/google/pprof v0.0.0-20261008003335-7bae8d8c4c9e // indirect
+	github.com/google/pprof v0.0.0-20261016150608-1facf8f91b50 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
@@ -58,7 +58,7 @@ require (
 	golang.org/x/term v0.47.0 // indirect
 	golang.org/x/text v0.43.0 // indirect
 	golang.org/x/time v0.16.0 // indirect
-	golang.org/x/tools v0.51.0 // indirect
+	golang.org/x/tools v0.52.0 // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
