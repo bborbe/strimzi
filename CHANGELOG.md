@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+- chore: update github.com/bborbe/collection to v1.21.4, github.com/bborbe/errors to v1.6.5, github.com/bborbe/k8s to v1.14.24, sigs.k8s.io/structured-merge-diff/v7 to v7.0.1
+
 ## v1.8.22
 
 - chore: update Go to 1.27.3 and github.com/bborbe/collection to v1.21.3
