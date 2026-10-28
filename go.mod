@@ -3,24 +3,24 @@ module github.com/bborbe/strimzi
 go 1.27.3
 
 require (
-	github.com/bborbe/collection v1.21.3
-	github.com/bborbe/errors v1.6.3
-	github.com/bborbe/k8s v1.14.23
+	github.com/bborbe/collection v1.21.4
+	github.com/bborbe/errors v1.6.5
+	github.com/bborbe/k8s v1.14.24
 	github.com/golang/glog v1.2.5
 	github.com/onsi/ginkgo/v2 v2.33.1
 	github.com/onsi/gomega v1.44.0
 	k8s.io/apimachinery v0.38.0-alpha.2
 	k8s.io/client-go v0.38.0-alpha.2
-	sigs.k8s.io/structured-merge-diff/v7 v7.0.0
+	sigs.k8s.io/structured-merge-diff/v7 v7.0.1
 )
 
 require (
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
-	github.com/bborbe/math v1.4.15 // indirect
+	github.com/bborbe/math v1.4.16 // indirect
 	github.com/bborbe/parse v1.12.4 // indirect
-	github.com/bborbe/run v1.11.2 // indirect
+	github.com/bborbe/run v1.11.5 // indirect
 	github.com/bborbe/time v1.27.18 // indirect
-	github.com/bborbe/validation v1.5.5 // indirect
+	github.com/bborbe/validation v1.5.6 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
@@ -44,14 +44,14 @@ require (
 	github.com/prometheus/client_golang v1.25.0 // indirect
 	github.com/prometheus/client_model v0.6.3 // indirect
 	github.com/prometheus/common v0.72.1 // indirect
-	github.com/prometheus/procfs v0.22.0 // indirect
+	github.com/prometheus/procfs v0.23.0 // indirect
 	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	go.yaml.in/yaml/v2 v2.4.4 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
 	golang.org/x/mod v0.42.0 // indirect
-	golang.org/x/net v0.61.0 // indirect
+	golang.org/x/net v0.62.0 // indirect
 	golang.org/x/oauth2 v0.37.0 // indirect
 	golang.org/x/sync v0.24.0 // indirect
 	golang.org/x/sys v0.49.0 // indirect
@@ -66,7 +66,7 @@ require (
 	k8s.io/apiextensions-apiserver v0.38.0-alpha.2 // indirect
 	k8s.io/klog/v2 v2.140.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20261014044854-ca3452a79603 // indirect
-	k8s.io/utils v0.0.0-20260707023825-cf1189d6abe3 // indirect
+	k8s.io/utils v0.0.0-20261023123148-ca04ba58ecab // indirect
 	sigs.k8s.io/json v0.0.0-20260909141634-11ed52e25bc5 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
