@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+- chore: update github.com/bborbe/collection to v1.21.9, github.com/bborbe/errors to v1.7.1, github.com/bborbe/k8s to v1.16.2
+
 ## v1.9.1
 
 - chore: remove stale vulnerability ignore IDs that no longer apply (govulncheck, trivy)
